@@ -129,10 +129,10 @@ int main()
     gen_ins(5,5,&head);
     gen_ins(7,7,&head);
     gen_ins(2,2,&head);
-    front_del(&head);
-    end_del(&head);
-    gen_del(4,&head);
-    gen_del(1,&head);
-    gen_del(4,&head);
+   // front_del(&head);
+    //end_del(&head);
+    //gen_del(4,&head);
+    //gen_del(1,&head);*/
+    gen_del(3,&head);
     print_list(head);
 }
