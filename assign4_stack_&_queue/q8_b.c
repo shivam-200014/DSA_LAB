@@ -1,5 +1,6 @@
 //binary search
 //only for sorted array
+
 #include<stdio.h>
 
 void binary_search(int A[],int n,int key)
@@ -18,9 +19,11 @@ void binary_search(int A[],int n,int key)
         else if(key<A[mid])
         {
             end=mid-1;
+            //start=mid+1;
         }
         else{
             start=mid+1;
+            //end=mid-1;
         }
     }
     printf("0\n");
