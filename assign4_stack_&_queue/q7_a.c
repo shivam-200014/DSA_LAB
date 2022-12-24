@@ -20,8 +20,7 @@ int  insertion_sort(int a[] ,int n)
         }
         
     }
-    return count;
-    
+    return count;  
 }
 
 int main()
