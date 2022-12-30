@@ -74,7 +74,6 @@ int level0rder(Node *front,Node *back)
             temp=temp->next;
         }
         //
-
         int j=count;
         while (j--)
         {
@@ -169,16 +168,17 @@ void insert(Node **front,Node **back,char val)
 
 int main()
 {
-    //tree
-
+    //root
     TreeNode *root=(TreeNode*)malloc(sizeof(TreeNode));
     root->val='A';
     root->left=root->right=NULL;
+    //queue for insertion
     Node *front1,*back1;
     front1=(Node*)malloc(sizeof(Node));
     front1->root=root;
     front1->next=NULL;
     back1=front1;
+    //
     insert(&front1,&back1,'B');   
     insert(&front1,&back1,'C');
     insert(&front1,&back1,'D');
@@ -195,7 +195,7 @@ int main()
     front->root=root;
     front->next=NULL;
     back=front;
-
+    //
     printf("pre-order:");
     pre0rder(root);
     printf("\nin-order:");
@@ -207,7 +207,4 @@ int main()
     printf("\nDepth of tree:%d",height);
     printf("\nsize of tree:%d",size(root));
     
-    
-
-
 }
